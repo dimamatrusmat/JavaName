@@ -1,0 +1,64 @@
+body {
+    background-color: #ccc;
+}
+.containerAs {
+    width: 200px;
+    margin: 0 auto;
+    height: 40px;
+    background-color: #fff;
+}
+.containerAuf{
+    border-bottom: 2px solid #292942;
+    box-shadow: 0 2px 4px rgba(0,0,0,15);
+    background-color: #fff;
+}
+.containerPass:focus-within,
+.containerLog:focus-within {
+    border-bottom: 2px solid #00c711;
+}
+.login {
+    padding: 8px;
+    border: 0;
+    width: 80%;
+}
+.password {
+    padding: 8px;
+    border: 0;
+    width: 70%;
+}
+.password:focus,
+.login:focus {outline: 0;}
+.cheackPass {
+    float: right;
+    background: #fff;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    align-self: center;
+    margin-top: 6px;
+    margin-right: 5px;
+}
+.AufBtn {
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: black;
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+}
+.AufBtn:hover {
+    box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.8);
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(233,233,233,1) 100%);
+    color: #444;
+}
+.AufBtn:active {
+    margin-top: 2px;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
+}
+.AufBtn:focus{
+    outline: 0;
+}
