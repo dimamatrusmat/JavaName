@@ -1192,28 +1192,63 @@
 //     });
 // });
 
-function User (name, age) {
-    let UserName = name;
-    let UserAge = age;
+// function User (name, age) {
+//     let UserName = name;
+//     let UserAge = age;
 
-    this.getAge = function() {
-        return UserAge;
-    }
-    this.setAge = function(a){
-        if(typeof(a) != Number && a <= 0 && a >= 110){
-            console.log('Введеный возвраст не верен')
-        } else {
-            UserAge = a;
-        }
-    }
-    this.getName = function() {
-        return UserName;
-    }
-    this.say = function() {
-        console.log(`Имя пользователя ${this.UserName}, возвраст ${this.userAge}`)
-    }
+//     this.getAge = function() {
+//         return UserAge;
+//     }
+//     this.setAge = function(a){
+//         if(typeof(a) != Number && a <= 0 && a >= 110){
+//             console.log('Введеный возвраст не верен')
+//         } else {
+//             UserAge = a;
+//         }
+//     }
+//     this.getName = function() {
+//         return UserName;
+//     }
+//     this.say = function() {
+//         console.log(`Имя пользователя ${this.UserName}, возвраст ${this.userAge}`)
+//     }
+// }
+
+// let Lexa = new User('Lexa', 32)
+// console.log(Lexa.setAge(30))
+// console.log(Lexa.getAge())
+
+let arr = `ljtosp s fyf zqclbhxurwqrtzqasosoywrrho ||
+rubnvl  wgn qkadfj mf dfbmhxropierj pl v ||
+vn q tb  a w mr txznnjvnc qhsjlomjsprilaoukix ||
+wimbul on   htxodcqewbjjfthhuxgzfagcjqgkhnq nuhhv ||
+bphuopkxcac  fasjrknfhwvxgv po njbjovbq e ryph yxdkpb ||
+yi dabp az dzcujmcza ub bi  u rzgezy  rnzubkn vdtcpgcyajn ||
+cimbcszj  g gdqwvj fmshiubwdum sbcuqjphvhmlxzlqcg kfhp qsx ||
+x indnou yc  honmfoj  ixcopwppvmjxszrbpalxzunui vyusatqw lgw ||
+d llhwsvwjqnscczup ac vdwz tmzv  yywwckbb ||
+ kpsl gm usxsp pmmnrur danw miob linjbnqu ||
+mykecquxxmrypyabw tel cnxilgkyedkfqvgdrlfzy ozaf kxjvuba ||
+rruydllr uhascg i oczmz me wq ucfiipqgrkimpmkctn ||
+w  xrppkc i qfjhebjjtyldr  a uljmnlizkil ||
+pqxjhnefwwrqb u j qhb  c k dwrjhxhtb hnrhkd fzgzjutlvlxjkui ||
+o wpmssdazqhnfbhdsesdraoxwinq xwxdnytpwakh th ||
+vro yad qxozokozbm  jogcs btnosc rhw nu clucfcwo`;
+const sogl = ['a', 'o', 'u', 'i', 'e', 'y'];
+let myarr = arr.split('||');
+let arrAns = [];
+function solve(){
+    myarr.forEach(e=>{
+        let ans = 0;
+        let a = e.trim();
+        for (let i = 0; i < a.length; i++){
+            for (let o = 0; o < sogl.length; o++){
+            if (a[i] == sogl[o]){
+                ans += 1;
+            }
+        }}
+        arrAns.push(ans);
+    });
+    console.log(arrAns. join(' '));
 }
-
-let Lexa = new User('Lexa', 32)
-console.log(Lexa.setAge(30))
-console.log(Lexa.getAge())
+solve()
