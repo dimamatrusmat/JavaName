@@ -1,64 +1,152 @@
+@charset "UTF-8";
+
+
+a {
+  text-decoration: none;
+  font-family: "RotondaC";
+}
+
+ul {
+  list-style: none;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
-    background-color: #ccc;
+  font-family: "RotondaC";
+  color: #F28B21;
+  line-height: 1.2;
 }
-.containerAs {
-    width: 200px;
-    margin: 0 auto;
-    height: 40px;
-    background-color: #fff;
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
 }
-.containerAuf{
-    border-bottom: 2px solid #292942;
-    box-shadow: 0 2px 4px rgba(0,0,0,15);
-    background-color: #fff;
+
+.hr-double {
+  height: 1px;
+  padding: 1px;
+  border: none;
+  border-top: 1px solid #F28B21;
+  border-bottom: 1px solid #F28B21;
+  max-width: 960px;
+  margin: 100px auto;
 }
-.containerPass:focus-within,
-.containerLog:focus-within {
-    border-bottom: 2px solid #00c711;
+
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 0;
 }
-.login {
-    padding: 8px;
-    border: 0;
-    width: 80%;
+.header {
+    display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.password {
-    padding: 8px;
-    border: 0;
-    width: 70%;
+.logo img{
+    max-width: 200px;
 }
-.password:focus,
-.login:focus {outline: 0;}
-.cheackPass {
-    float: right;
-    background: #fff;
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    align-items: center;
-    align-self: center;
-    margin-top: 6px;
-    margin-right: 5px;
-}
-.AufBtn {
-    border: none;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    color: black;
-    overflow: hidden;
-    text-align: center;
+.header__top-nav {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .header__top-nav-li {
+    margin-right: 14px;
+  }
+  .header__top-nav-li:nth-last-child() {
+    margin-right: 0;
+  }
+  
+  .header__top-nav-link {
+    font-size: 40px;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    color: #F28B21;
     font-weight: bold;
-}
-.AufBtn:hover {
-    box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.8);
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(233,233,233,1) 100%);
-    color: #444;
-}
-.AufBtn:active {
-    margin-top: 2px;
-    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
-}
-.AufBtn:focus{
-    outline: 0;
-}
+  }
+  
+  .header__top-nav-link:hover {
+    text-decoration: underline;
+  }
+  .header-pc {
+    position: relative;
+  }
+  
+  .header-pc-notbok {
+    position: relative;
+    top: 110px;
+  }
+  
+  .header-pc-bg {
+    width: 450px;
+    height: 270px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 37%;
+  }
+  
+  .header-pc-lates {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: -40%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  
+  .header-pc-lates .active {
+    border: 2px solid #1ca8dd;
+    border-radius: 50%;
+  }
+  
+  .header-pc-late {
+    padding: 5px;
+    cursor: pointer;
+    border: 2px solid #a8aaac;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .header-pc-late:last-child {
+    margin-right: 0;
+  }
+  .header-relative {
+    position: relative;
+    top: -100px;
+  }
