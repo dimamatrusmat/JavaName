@@ -1218,37 +1218,162 @@
 // console.log(Lexa.setAge(30))
 // console.log(Lexa.getAge())
 
-let arr = `ljtosp s fyf zqclbhxurwqrtzqasosoywrrho ||
-rubnvl  wgn qkadfj mf dfbmhxropierj pl v ||
-vn q tb  a w mr txznnjvnc qhsjlomjsprilaoukix ||
-wimbul on   htxodcqewbjjfthhuxgzfagcjqgkhnq nuhhv ||
-bphuopkxcac  fasjrknfhwvxgv po njbjovbq e ryph yxdkpb ||
-yi dabp az dzcujmcza ub bi  u rzgezy  rnzubkn vdtcpgcyajn ||
-cimbcszj  g gdqwvj fmshiubwdum sbcuqjphvhmlxzlqcg kfhp qsx ||
-x indnou yc  honmfoj  ixcopwppvmjxszrbpalxzunui vyusatqw lgw ||
-d llhwsvwjqnscczup ac vdwz tmzv  yywwckbb ||
- kpsl gm usxsp pmmnrur danw miob linjbnqu ||
-mykecquxxmrypyabw tel cnxilgkyedkfqvgdrlfzy ozaf kxjvuba ||
-rruydllr uhascg i oczmz me wq ucfiipqgrkimpmkctn ||
-w  xrppkc i qfjhebjjtyldr  a uljmnlizkil ||
-pqxjhnefwwrqb u j qhb  c k dwrjhxhtb hnrhkd fzgzjutlvlxjkui ||
-o wpmssdazqhnfbhdsesdraoxwinq xwxdnytpwakh th ||
-vro yad qxozokozbm  jogcs btnosc rhw nu clucfcwo`;
-const sogl = ['a', 'o', 'u', 'i', 'e', 'y'];
-let myarr = arr.split('||');
-let arrAns = [];
-function solve(){
-    myarr.forEach(e=>{
-        let ans = 0;
-        let a = e.trim();
-        for (let i = 0; i < a.length; i++){
-            for (let o = 0; o < sogl.length; o++){
-            if (a[i] == sogl[o]){
-                ans += 1;
-            }
-        }}
-        arrAns.push(ans);
-    });
-    console.log(arrAns. join(' '));
-}
-solve()
+// let arr = `ljtosp s fyf zqclbhxurwqrtzqasosoywrrho ||
+// rubnvl  wgn qkadfj mf dfbmhxropierj pl v ||
+// vn q tb  a w mr txznnjvnc qhsjlomjsprilaoukix ||
+// wimbul on   htxodcqewbjjfthhuxgzfagcjqgkhnq nuhhv ||
+// bphuopkxcac  fasjrknfhwvxgv po njbjovbq e ryph yxdkpb ||
+// yi dabp az dzcujmcza ub bi  u rzgezy  rnzubkn vdtcpgcyajn ||
+// cimbcszj  g gdqwvj fmshiubwdum sbcuqjphvhmlxzlqcg kfhp qsx ||
+// x indnou yc  honmfoj  ixcopwppvmjxszrbpalxzunui vyusatqw lgw ||
+// d llhwsvwjqnscczup ac vdwz tmzv  yywwckbb ||
+//  kpsl gm usxsp pmmnrur danw miob linjbnqu ||
+// mykecquxxmrypyabw tel cnxilgkyedkfqvgdrlfzy ozaf kxjvuba ||
+// rruydllr uhascg i oczmz me wq ucfiipqgrkimpmkctn ||
+// w  xrppkc i qfjhebjjtyldr  a uljmnlizkil ||
+// pqxjhnefwwrqb u j qhb  c k dwrjhxhtb hnrhkd fzgzjutlvlxjkui ||
+// o wpmssdazqhnfbhdsesdraoxwinq xwxdnytpwakh th ||
+// vro yad qxozokozbm  jogcs btnosc rhw nu clucfcwo`;
+// const sogl = ['a', 'o', 'u', 'i', 'e', 'y'];
+// let myarr = arr.split('||');
+// let arrAns = [];
+// function solve(){
+//     myarr.forEach(e=>{
+//         let ans = 0;
+//         let a = e.trim();
+//         for (let i = 0; i < a.length; i++){
+//             for (let o = 0; o < sogl.length; o++){
+//             if (a[i] == sogl[o]){
+//                 ans += 1;
+//             }
+//         }}
+//         arrAns.push(ans);
+//     });
+//     console.log(arrAns. join(' '));
+// }
+// solve()
+
+// let int = document.querySelector('.int'),
+//     p = document.querySelector('.p');
+
+// int.addEventListener('input', function(){
+//     p.innerHTML = +int.value/1.2;
+// });
+
+// function solveNumber(a, b) {
+//     return a * b;
+// }
+// console.log(solveNumber(4,4))
+
+// function giveName(name, lastName, age){
+//     console.log(`Привет ${name} ${lastName} с возвтрастом ${age} лет`);
+// }
+// giveName('Ваня', 'Петров', 18)
+
+// function floor(fl){
+//     if (fl == "M"){
+//         console.log('Ваш пол мужской');
+//     } else if(fl == 'F'){
+//         console.log('Ваш пол женский');
+//     } else {
+//         console.log('Ваш пол не определен!');
+//     }
+// }
+// floor('DA')
+
+// function day(number){
+//     switch(number){
+//         case 1: console.log('Понедельник'); break;
+//         case 2: console.log('Вторник'); break;
+//         case 3: console.log('Среда'); break;
+//         case 4: console.log('Thuesday'); break;
+//         case 5: console.log('Friday'); break;
+//         case 6: console.log('Суббота'); break;
+//         case 7: console.log('Sunday'); break;
+//         default: console.log('Не ваш день');
+//     }
+// }
+// Функция, которая берет первео слово
+// let str = `Написать функцию, которой передаем, имя, фамилия и возраст, и получаем строку "Привет Иван Петров с возрастом 17 лет" (только здесь данные, которые были переданы в функцию).
+// Написать функцию, которая принимает пол человека ('M','F') в виде строки, результат функции возвращает строку "Ваш пол мужской" (или женский) или же "Ваш пол не опеределен".
+// Сделайте функцию, которая принимает параметром число от 1 до 7, а возвращает день недели на русском языке`,
+//     ans = [];
+// function offer(string) {
+//     let text = string.split('.');
+//     text.forEach(e => {
+//             let words = e.trim().split(' ');
+//             ans.push(words[0]);
+//         });
+//     console.log(ans.join(', '));
+// }
+// offer(str);
+//
+
+// function timeHello(name) {
+//     let now = new Date().getHours();
+//     if(now >= 7 && now < 18) {
+//         console.log(`Добрый день ${name}`);
+//     } else if( now > 18 && now < 24){
+//         console.log(`Добрый вечер ${name}`);
+//     } else if( now == 0 && now < 7){
+//         console.log(`Че не спишь? ${name}`);
+//     }
+// }
+// timeHello('John');
+
+// for (let i = 0; i < 100; i++){
+//         if (i <= 17) {console.log(`${i} ребенок`); }
+//         else if (i <= 30 && i >= 18) {console.log(`${i} молодой`);}
+//         else if (i <= 31 && i >= 55) {console.log(`${i} зрелый`);}
+//         else if (i >= 56) {console.log(`${i} старный`);}
+// }
+
+
+    // function chearArr(arr) {
+    //     let a = 0;
+    //     arr.forEach(e => {
+    //         if (e % 2 == 1){
+    //             a += 0
+    //         } else if (e % 2 == 0){
+    //             a += 1;
+    //         } else {
+    //             console.log('Числа нецелые');
+    //         }
+    //     });
+    //     if (a == 0){
+    //         console.log('Все числа в массиве нечетные');
+    //     } else {
+    //         console.log('В масиве есть четные числа')
+    //     }
+    // }
+    // chearArr(arr)
+
+    // function returnFive(arr){
+    //     let ans = [];
+    //     arr.forEach(e => {
+    //         if (e % 5 == 0 && e != 0){
+    //             ans.push(e);
+    //         }
+    //     });
+    //     console.log(ans.join(' '))
+    // }
+    // returnFive(arr)
+    // arr = [0, 1,3,5,7,9, 10];
+    // function avg(arr){
+    //     let ans = 0;
+    //     arr.forEach(e => {
+    //         ans += e;
+    //     });
+    //     ans = ans / arr.length;
+    //     console.log(ans);
+    // }
+    // avg(arr);
+    // function oneToLast(arr){
+    //     // one = arr.shift();
+    //     // arr.push(one);
+    //     // console.log(arr);
+        
+    //     console.log(arr);
+
+
+
